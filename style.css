@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.logo img{
+   width: 150px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+        
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    
+
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+a {
+   text-decoration: none;
+    color: #555;
+}
+p {
+    color: #b3a0a0;
+ }
+
+
+
+ .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+
+ .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .col-2 {
+    background-image: url(image2.jpg) ;
+    flex-basis: 100%;
+    min-width: 300px;
+    height: 300px;
+    mask-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+
+ }
+
+ .col-2 h1 {
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+ 
+ p {
+    margin-left: 20px;
+ }
+
+ .btn {
+    display: inline-block;
+    background: orangered;
+    color: rgb(226, 214, 214);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 8px 30px;
+    margin: 30px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+ }
+ .btn:hover{
+    background-color: rgb(69, 116, 91);
+ }
+
+ .header {
+    background: radial-gradient( #385ae4, rgb(246, 247, 248));
+ }
+
+ .header .row {
+    margin-top: 50px;
+    
+ }
+
+
+ .product {
+    margin: 70px 0;
+   
+ }
+
+
+ .products{
+   background-color: #e94c0e;
+   border-radius: 5px;
+   color: aliceblue;
+   padding-left: 20PX;
+ }
+ .col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    
+ }
+ .col-3 img{
+    width: 100%;
+    padding: 10px;
+ }
+
+
+ .scontainer{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ .button1{
+    background: orangered;
+    color: rgb(241, 230, 230);
+    padding: 8px 30px;
+    margin: 30px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+    
+ .button1:hover{
+        background-color: rgb(62, 100, 80);
+  }
+
+  .price{
+        margin-left: 40%;
+  }
+
+  .namewatch{
+    text-align: center;
+  }
+
+  .description{
+    text-align: justify;
+  }
+
+  #button2 {
+    margin-top: 90px;
+  }
+
+
+  .footer {
+    background: #000;
+    font-size: 15px;
+    padding: 60px 0 60px;
+  }
+
+  .footerdes{
+    color: rgb(143, 151, 158);
+  }
+  .footerdes1{
+    margin: 0;
+  }
+  .fa{
+      margin: 7px;
+ }
+
+
+ .menuicon{
+   width: 25px;
+   margin-left: 20px;
+   display: none;
+
+ }
+       /* media query for the header  less than 800px screen */
+
+@media only screen and (max-width: 800px) {
+
+
+   .col-2 {
+      background-image: url(image3.jpg) ;
+   }
+
+   
+   
+   .logo{
+      align-items: center;
+      margin-left: 50px;
+      padding: 0%;
+   }
+   
+   .logo img{
+      width: 300px;
+      margin: 0%;
+      padding: 0%;
+   }
+   
+   
+   nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+   }
+
+   
+      nav ul li {
+         display: none;
+         position: block;
+         margin-left: 50px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+           
+   }
+
+   nav ul li a{
+      color: white;
+        
+}
+.menuicon {
+   display: block;
+   cursor: pointer;
+
+}
+   
+}
+
+
+      /* media query for the products section less then 600px screen*/
+
+
+@media only screen and (max-width: 600px){
+
+   .row {
+      text-align: center;
+   }
+
+   .products{
+      display: flex;
+      justify-content: center;
+      background-color: #e9e4e4;
+      border-radius: 20PX;
+   }
+   .col-2{
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      height: 450px;
+      padding: 20px;
+   }
+   .price{
+      display: flex;
+      align-items: center;
+   }
+
+   .namewatch{
+      margin-left: 15px;
+   }
+
+
+   .col-3 .description{
+      display: none;
+   }
+
+
+
+}
